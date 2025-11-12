@@ -58,7 +58,7 @@
 										"type": "ParquetWriteSettings"
 									}
 								},
-								"enableStaging": false,
+								"enableStaging": true,
 								"translator": {
 									"type": "TabularTranslator",
 									"typeConversion": true,
