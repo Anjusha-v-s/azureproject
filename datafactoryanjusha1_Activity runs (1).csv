@@ -1,0 +1,19 @@
+"Activity name","Activity status","Error","Activity type","Run start","Duration","Integration runtime","User properties","Activity run ID","Log"
+"update_last_cdc","Failed","{
+    ""errorCode"": ""2200"",
+    ""message"": ""ErrorCode=UserErrorFileNotFound,'Type=Microsoft.DataTransfer.Common.Shared.HybridDeliveryException,Message=ADLS Gen2 operation failed for: Operation returned an invalid status code 'NotFound'. Account: 'storageaccountanjusha1'. FileSystem: 'bronze'. Path: 'DimUser/empty.json'. ErrorCode: 'PathNotFound'. Message: 'The specified path does not exist.'. RequestId: '281f1b71-101f-004d-48a1-534a70000000'. TimeStamp: 'Wed, 12 Nov 2025 06:58:08 GMT'.,Source=Microsoft.DataTransfer.ClientLibrary,''Type=Microsoft.Azure.Storage.Data.Models.ErrorSchemaException,Message=Operation returned an invalid status code 'NotFound',Source=Microsoft.DataTransfer.ClientLibrary,'"",
+    ""failureType"": ""UserError"",
+    ""target"": ""update_last_cdc"",
+    ""details"": []
+}","Copy","11/12/2025, 12:27:55 PM","15s","AutoResolveIntegrationRuntime (East US)","{}","3b0c8ebc-2cf8-4cc1-93da-fad7caba7afd",""
+"max_query","Succeeded","","Script","11/12/2025, 12:27:38 PM","17s","AutoResolveIntegrationRuntime (West US 2)","{}","1990091b-9ee8-4ae6-8b2b-440f422e23de",""
+"Ifincrementaldata","Failed","{
+    ""errorCode"": ""ActionFailed"",
+    ""message"": ""Activity failed because an inner activity failed"",
+    ""failureType"": ""UserError"",
+    ""target"": ""Ifincrementaldata"",
+    ""details"": """"
+}","IfCondition","11/12/2025, 12:27:37 PM","35s","","{}","f794f527-5dd0-4913-8771-c63b757055de",""
+"AzureSQLto Lake","Succeeded","","Copy","11/12/2025, 12:26:36 PM","1m 0s","AutoResolveIntegrationRuntime (East US)","{}","124f6c44-778b-41f4-80ca-799de15d224e",""
+"Last_cdc","Succeeded","","Lookup","11/12/2025, 12:26:27 PM","8s","AutoResolveIntegrationRuntime (East US)","{}","aff4061d-4a75-4459-9201-897cd50cfa27",""
+"current","Succeeded","","SetVariable","11/12/2025, 12:26:27 PM","Less than 1s","","{}","b3c6a6b7-8c50-4e98-96d9-291eb34fa57d",""
