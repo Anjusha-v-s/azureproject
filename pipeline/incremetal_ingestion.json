@@ -213,7 +213,7 @@
 									"type": "JsonSource",
 									"additionalColumns": [
 										{
-											"name": "cdc",
+											"name": "@{pipeline().parameters.table}",
 											"value": {
 												"value": "@activity('max_query').output.resultSets[0].rows[0].cdc",
 												"type": "Expression"
